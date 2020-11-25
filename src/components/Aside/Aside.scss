@@ -1,0 +1,19 @@
+@import '../../vars_and_mixins/colors.scss';
+
+.aside{
+    width: 98px;
+    height: 100%;
+    background-color: $primaryBackgroundColor;
+    border-right: 1px solid $mainBorderColor;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .box-aside-main{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width:80%;
+    height: 100%;
+  }

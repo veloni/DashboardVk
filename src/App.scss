@@ -1,0 +1,15 @@
+@import './vars_and_mixins/colors.scss';
+
+
+.App {
+  text-align: center;
+  height: 100vh;
+}
+
+body {
+  background-color: $mainBackgroundColor;
+  height: 100%;
+}
+
+
+
