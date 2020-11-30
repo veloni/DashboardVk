@@ -1,6 +1,9 @@
 import { useEffect } from 'react';
 import './App.scss';
 import Aside from './components/Aside/Aside';
+import Header from './components/Header/Header';
+import Body from './components/Body/Body';
+
 
 const App = () => {
 
@@ -11,11 +14,9 @@ const App = () => {
 
   return (
     <section className="App">
-      <header className="App-header">
-        
-      </header>
+      <Header/>
       <Aside/>
-     
+      <Body/>
     </section>
   );
 }

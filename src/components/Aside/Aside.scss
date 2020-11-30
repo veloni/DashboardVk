@@ -1,19 +1,46 @@
 @import '../../vars_and_mixins/colors.scss';
 
 .aside{
-    width: 98px;
+    width: 7vw;
     height: 100%;
     background-color: $primaryBackgroundColor;
     border-right: 1px solid $mainBorderColor;
     display:flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    position:absolute;
+    top:0;
+    left:0;
+  }
+
+  .box-aside-main{
+    height: 90%;
+    display:flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
   }
   
-  .box-aside-main{
+  .box-aside-icons{
+    height: 50%;
     display:flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width:80%;
-    height: 100%;
+  }
+
+  .aside-icon{
+    padding-bottom:3vw;
+  }
+
+  .aside-icon:last-child{
+    padding-bottom:0;
+  }
+
+  .vk-icon{
+ 
+  }
+
+  .button-switch{
+    
   }

@@ -1,0 +1,15 @@
+@import '../../vars_and_mixins/colors.scss';
+
+.body-main-section{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 93%;
+    height: 87%;
+    padding-left:7vw;
+}
+
+.body-main-box{
+    width: 95%;
+    height: 100%;
+}
