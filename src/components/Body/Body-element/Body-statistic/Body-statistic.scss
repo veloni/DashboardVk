@@ -1,0 +1,39 @@
+@import '../../../../vars_and_mixins/colors.scss';
+@import '../../../../App.scss';
+
+.body-top-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 27.5vw;
+    background-color: $primaryBackgroundColor;
+    border: 1px solid $mainBorderColor;
+    border-radius: 1vw 1vw 1vw 1vw;
+}
+
+.body-top-box-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80%;
+    width: 23.5vw;
+}
+
+.body-top-box-container-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.point{
+    height: 0.5vw;
+    width: 0.5vw;
+}
+
+.box-point{
+    display:flex;
+    width: 3vw;
+    align-items: center;
+    justify-content: space-evenly;
+}

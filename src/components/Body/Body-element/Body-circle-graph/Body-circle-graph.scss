@@ -1,0 +1,21 @@
+@import '../../../../vars_and_mixins/colors.scss';
+@import '../../../../App.scss';
+
+.circle-graph{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 23.5%;
+    background-color: $primaryBackgroundColor;
+    border: 1px solid $mainBorderColor;
+    border-radius: 1vw 1vw 1vw 1vw;
+}
+
+.circle-graph-box{
+    height: 80%;
+    width: 80%;
+}
+
+
+
+

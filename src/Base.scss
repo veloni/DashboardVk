@@ -1,0 +1,61 @@
+@font-face{
+    font-family: 'Gilroy';
+    src: url("fonts/gilroy-medium.ttf");
+}
+
+@import 'vars_and_mixins/colors.scss';
+
+.main-text{
+    color:$textColorBlackTheme;
+    font-family: Gilroy;
+    font-size: 1.5vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.secondary-text{
+    color:$textColorBlackTheme;
+    font-family: Gilroy;
+    font-size: 1.25vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.percentage-text{
+    color:$secondaryTextColor;
+    font-family: Gilroy;
+    font-size: 1vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: right;
+}
+
+.small-text{
+    color:$textColorBlackTheme;
+    font-family: Gilroy;
+    font-size: 1vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.secondary-small-text{
+    color:$mainBorderColor;
+    font-family: Gilroy;
+    font-size: 1vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+}

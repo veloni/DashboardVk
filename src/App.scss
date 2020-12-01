@@ -1,5 +1,5 @@
 @import './vars_and_mixins/colors.scss';
-
+@import 'Base.scss';
 
 .App {
   text-align: center;
@@ -10,6 +10,7 @@ body {
   background-color: $mainBackgroundColor;
   height: 100%;
 }
+
 
 
 
