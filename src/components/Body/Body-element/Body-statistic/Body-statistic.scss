@@ -37,3 +37,13 @@
     align-items: center;
     justify-content: space-evenly;
 }
+
+.percentage-text-counter {
+    margin-right: 10px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.is-showed {
+    opacity: 1;
+}

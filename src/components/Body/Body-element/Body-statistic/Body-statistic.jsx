@@ -1,40 +1,35 @@
-import point from '../../../../svg/point.svg';
 import './Body-statistic.scss';
-import arrowUp from './svg/arrow-up.svg';
-import arrowDown from './svg/arrow-down.svg';
+import BodyStatisticsElement from './BodyStatisticsElement';
 
 const BodyStatistic = () => {
-    const points = [1,1,1];
-    const titleBox = ["Friends", "Unique visitors", "Folowers"];
-    const dataPeople = [1,2,3];
-    const dataPeopleProcent = [1,2,3];
+    const initData = [
+        {
+            title: 'Friends',
+            people: 1,
+            percent: 1,
+            id: 1,
+        },
+        {
+            title: 'Unique visitors',
+            people: 2,
+            percent: 2,
+            id: 2,
+        },
+        {
+            title: 'Folowers',
+            people: 3,
+            percent: 3,
+            id: 3,
+        },
+    ];
+
     return (
-        titleBox.map((item,index) => (
-        <div className="body-top-box">
-            <div className="body-top-box-container">
-                <div className="body-top-box-container-text"> 
-                    <span className="main-text">
-                    {item}
-                    </span>
-                    <div className="box-point">
-                    {points.map(() => (
-                        <img src={point} className="point" alt=""/>
-                        ))}
-                    </div>
-                </div>
-                <div className="body-top-box-container-text"> 
-                    <span className="secondary-text">
-                        {dataPeople[index]}
-                    </span>
-                   <span className="percentage-text">
-                        <img src={arrowUp} className="point" alt=""/>
-                   </span>
-                </div>
-            </div>
-        </div>
-          ))
+        initData.map((data) => (
+            <BodyStatisticsElement
+                data={data}
+            />
+        ))
     );
 };
 
 export default BodyStatistic;
-
