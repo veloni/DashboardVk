@@ -5,19 +5,19 @@ const BodyStatistic = () => {
     const initData = [
         {
             title: 'Friends',
-            people: 1,
+            people: 500,
             percent: 1,
             id: 1,
         },
         {
             title: 'Unique visitors',
-            people: 2,
+            people: 500,
             percent: 2,
             id: 2,
         },
         {
             title: 'Folowers',
-            people: 3,
+            people: 500,
             percent: 3,
             id: 3,
         },

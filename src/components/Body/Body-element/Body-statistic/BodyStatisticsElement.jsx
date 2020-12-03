@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import point from '../../../../svg/point.svg';
 import arrowUp from './svg/arrow-up.svg';
 import arrowDown from './svg/arrow-down.svg';
@@ -29,15 +30,37 @@ const BodyStatisticsElement = ({
               ))}
               </div>
           </div>
-          <button onClick={() => changeData()}>
-              click
-          </button>
+              {
+   useEffect(() => {
+    // Обновляем название докуммента, используя API браузера
+    UseDataState();
+  })
+
+}
+
+              
+         
+               
+                
+                  
+                
+                
+          
+
+
+         
+         
+         
+         
+         
+
+
           <div className="body-top-box-container-text">
               <span className="secondary-text">
                   {peopleCounter} people
               </span>
           <span className="percentage-text">
-              <span className={`percentage-text-counter ${isArrowUp && 'is-showed'}`}>
+              <span className={`percentage-text-counter ${'is-showed'}`}>
                   {percentCounter}
               </span>
               <img src={isArrowUp ? arrowUp : arrowDown} className="point" alt=""/>
