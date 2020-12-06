@@ -17,6 +17,14 @@ const BodyStatisticsElement = ({
     changeData,
   } = UseDataState(people, percent);
 
+useEffect(() => {
+    const interval = setInterval(() => {
+      changeData();
+    }, 2000);
+
+    return () => clearInterval(interval);
+  }, [changeData]);
+
   return (
     <div className="body-top-box">
       <div className="body-top-box-container">
@@ -30,31 +38,6 @@ const BodyStatisticsElement = ({
               ))}
               </div>
           </div>
-              {
-   useEffect(() => {
-    // Обновляем название докуммента, используя API браузера
-    UseDataState();
-  })
-
-}
-
-              
-         
-               
-                
-                  
-                
-                
-          
-
-
-         
-         
-         
-         
-         
-
-
           <div className="body-top-box-container-text">
               <span className="secondary-text">
                   {peopleCounter} people
