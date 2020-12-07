@@ -40,10 +40,14 @@
 
 .percentage-text-counter {
     margin-right: 10px;
-    opacity: 0;
-    transition: opacity 1s;
 }
 
-.is-showed {
-    opacity: 1;
+.is-show{
+    transition: opacity 1s;
+    opacity:1;
+}
+
+.is-hide{
+    transition: opacity 1s;
+    opacity:0;
 }

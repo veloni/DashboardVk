@@ -8,30 +8,48 @@ const UseDataState = (
   const [isArrowUp, setIsArrowUp] = useState(true);
   const [peopleCounter, setPeopleCounter] = useState(people);
   const [percentCounter, setPercentCounter] = useState(percent);
-  let saveValuePeople = peopleCounter;
+  const [saveValuePeople, setSaveValuePeople] = useState(peopleCounter);
 
-  const changeData = () => {
+  const randomPeopleGenerate = () => {
+    return ((Math.random() < 0.5) ? -1 : 1) * Math.floor(Math.random() * Math.floor(50));
+   } 
 
-    const randomPeopleGenerate = () => {
-      return ((Math.random() < 0.5) ? -1 : 1) * Math.floor(Math.random() * Math.floor(100));
-     } 
+  const randomPeople = randomPeopleGenerate();
 
-     let randomPeople = randomPeopleGenerate();
-
-     const comparisonPeople = () => {
-      return ((saveValuePeople <= saveValuePeople + randomPeople ? -1 : 1));
-    };
-
-    const differencePeople = ((((saveValuePeople - randomPeople) * (comparisonPeople())/saveValuePeople)).toFixed(2));
-
-    setPeopleCounter(peopleCounter + randomPeople);
-    setPercentCounter(differencePeople);
-    setIsArrowUp((comparisonPeople() < 0 ? false : true));
-  
-    saveValuePeople = saveValuePeople + randomPeople;
-
+  const comparisonPeople = () => {
+    return ((saveValuePeople <= saveValuePeople + randomPeople ? -1 : 1));
   };
 
+  const calculationPercents = () =>{
+    return (((100*randomPeople/saveValuePeople)).toFixed(2));
+  };
+
+  const changeData = () => {
+    
+    const jsOpacity = document.querySelectorAll('.js-opacity');
+
+    jsOpacity.forEach((item) => {
+      item.classList.contains('is-hide') ? item.classList.remove('is-show') : item.classList.add('is-hide');
+    });
+
+    setTimeout(() => {
+      jsOpacity.forEach((item) => {
+        item.classList.contains('is-show') ? item.classList.remove('is-hide') : item.classList.add('is-show');
+      });
+    }, 500);
+
+    const overValuePeople = peopleCounter + randomPeople;
+    const overSaveValuePeople = saveValuePeople + randomPeople;
+    setSaveValuePeople(overSaveValuePeople >= 0 ? overSaveValuePeople : 10);
+
+    setTimeout(() => {
+      setPeopleCounter(overValuePeople >= 0 ? overValuePeople : 10);
+      setPercentCounter(overSaveValuePeople >= 0 ? calculationPercents() : 0);
+      setIsArrowUp(comparisonPeople() < 0);
+    }, 500);
+
+  };
+ 
   return {
     isArrowUp,
     peopleCounter,
