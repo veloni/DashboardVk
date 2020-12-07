@@ -36,7 +36,7 @@ const UseDataState = (
       jsOpacity.forEach((item) => {
         item.classList.contains('is-show') ? item.classList.remove('is-hide') : item.classList.add('is-show');
       });
-    }, 500);
+    }, 999);
 
     const overValuePeople = peopleCounter + randomPeople;
     const overSaveValuePeople = saveValuePeople + randomPeople;
@@ -46,7 +46,7 @@ const UseDataState = (
       setPeopleCounter(overValuePeople >= 0 ? overValuePeople : 10);
       setPercentCounter(overSaveValuePeople >= 0 ? calculationPercents() : 0);
       setIsArrowUp(comparisonPeople() < 0);
-    }, 500);
+    }, 999);
 
   };
  
