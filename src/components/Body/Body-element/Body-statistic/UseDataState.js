@@ -24,18 +24,21 @@ const UseDataState = (
     return (((100*randomPeople/saveValuePeople)).toFixed(2));
   };
 
+
   const changeData = () => {
     
     const jsOpacity = document.querySelectorAll('.js-opacity');
+  
+    const doingOpacity = (styleOne, styleTwo) => {
+      jsOpacity.forEach((item) => {
+        item.classList.contains(styleOne) ? item.classList.remove(styleTwo) : item.classList.add(styleOne);
+      });
+    }
 
-    jsOpacity.forEach((item) => {
-      item.classList.contains('is-hide') ? item.classList.remove('is-show') : item.classList.add('is-hide');
-    });
+    doingOpacity('is-hide','is-show');
 
     setTimeout(() => {
-      jsOpacity.forEach((item) => {
-        item.classList.contains('is-show') ? item.classList.remove('is-hide') : item.classList.add('is-show');
-      });
+      doingOpacity('is-show','is-hide');
     }, 999);
 
     const overValuePeople = peopleCounter + randomPeople;
@@ -57,6 +60,8 @@ const UseDataState = (
     changeData,
   }
 }
+
+
 
 export default UseDataState;
 

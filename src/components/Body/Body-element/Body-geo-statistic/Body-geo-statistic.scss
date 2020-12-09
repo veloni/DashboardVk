@@ -30,5 +30,17 @@
     width:23vw;
 }
 
+.box-container-meter{
+    height: 75%;
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.box-small-container-meter{
+    height: 80%;
+    width: 40%;
+    background-color:black;
+}
 
 
