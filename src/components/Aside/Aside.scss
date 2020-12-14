@@ -37,10 +37,23 @@
     padding-bottom:0;
   }
 
-  .vk-icon{
- 
+  .button-switch-black-theme{
+    width: 4vw;
+    height: 2vw;
+    background-color: $graphMainColor;
+    border: 1px solid $graphMainColor;
+    border-radius: 1vw 1vw 1vw 1vw;
+    display:flex;
+    align-items: center;
   }
 
-  .button-switch{
-    
+  .button-switch-black-theme-cirlce{
+    margin-right: 0.3vw;
+    width: 1vw;
+    height: 1vw;
+    background-color: $graphMainColor;
+    border: 0.4vw solid $textColorBlackTheme;
+    border-radius: 1vw 1vw 1vw 1vw;
+    margin-left:2vw;
+    transition: 1s margin-left;
   }

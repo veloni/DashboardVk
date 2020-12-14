@@ -9,6 +9,7 @@ import * as V from 'victory';
 import { VictoryLine } from 'victory';
 import { VictoryChart } from 'victory';
 import { VictoryScatter } from 'victory';
+import { VictoryAxis } from 'victory';
 
 const BodyMediumGraph = () => {
 
@@ -35,11 +36,10 @@ const BodyMediumGraph = () => {
 
             ticks: {
                 size: 15,
-                stroke: secondaryTextColor
+                stroke: secondaryTextColor,
             },
             grid: {
-                stroke: secondaryTextColor,
-                gridComponent: 10
+                stroke: secondaryTextColor
             },
             axis: {
                 stroke: secondaryTextColor
@@ -72,7 +72,18 @@ const BodyMediumGraph = () => {
                         <span className="small-text"> Follower </span>
                     </div>
                 </div>
-                <VictoryChart height={ 300 }  width={ 1250 } theme={ chartTheme } domain={{ x: [0, 9.5] , y:[0, 12] }}>
+                <VictoryChart 
+                            height={ 300 } 
+                            width={ 1450 }
+                            theme={ chartTheme }
+                   >
+                <VictoryAxis 
+                        tickValues={[0,1,2,3,4,5,6,7,8,9]}
+                   ></VictoryAxis>
+
+                <VictoryAxis dependentAxis crossAxis
+                        tickValues={[0,1,2,3,4,5,6,7,8,9]}
+                />
                    <VictoryLine 
                         interpolation="natural"
                         style={{data: { stroke: "#7F7FD5", strokeWidth: 4 } }}

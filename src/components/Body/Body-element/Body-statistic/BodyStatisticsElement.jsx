@@ -10,8 +10,6 @@ const BodyStatisticsElement = ({
 }) => {
   const { title, people, percent } = data;
 
- 
-
   const {
     isArrowUp,
     peopleCounter,
@@ -41,15 +39,15 @@ useEffect(() => {
               ))}
               </div>
           </div>
-          <div className="body-top-box-container-text">
-              <span className="secondary-text js-opacity">
+          <div className="body-top-box-container-text js-opacity">
+              <span className="secondary-text">
                   {peopleCounter} people
               </span>
           <span className="percentage-text">
-              <span className="percentage-text-counter js-opacity">
+              <span className="percentage-text-counter">
                   {percentCounter}
               </span>
-              <img src={isArrowUp ? arrowUp : arrowDown} className="point js-opacity" alt=""/>
+              <img src={isArrowUp ? arrowUp : arrowDown} className="point" alt=""/>
           </span>
           </div>
       </div>
