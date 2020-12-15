@@ -2,10 +2,9 @@ import './Body-geo-statistic.scss';
 import '../../../../vars_and_mixins/colors.scss';
 import '../../../../App.scss';
 
-
 const BodyGeoStatistic = () => {
     const country = ["Russia", "China", "Ucraine", "USA", "Mongolia", "Other"];
-    const valueCountry=[60, 10, 20, 0.26, 0.20, 0.50]
+    const valueCountry = [60, 15, 20, 0.26, 0.20, 0.50]
 
     return (
         <div className="geo-statistic">
@@ -13,7 +12,7 @@ const BodyGeoStatistic = () => {
                 <div className="title-geo-statistic-graph">
                    <span className="main-text"> Geo</span>
 
-                    <div className="">
+                    <div className="candle-graph-box-text">
                         <span className="small-text"> Country </span>
                         <span className="secondary-small-text"> City </span>
                     </div>
@@ -24,10 +23,13 @@ const BodyGeoStatistic = () => {
                 country.map((item,index) => (
                 <div className="box-small-container-meter"> 
                     <div className="box-small-container-meter-title titlte-text"> 
-                     <span> {item} </span>
-                     <span> {valueCountry[index]}%</span>
+                     <span className="text-country"> {item} </span>
+                     <span className="value-country"> {valueCountry[index]}%</span>
                     </div>
-                    <meter className="meter" value={valueCountry[index]} max="100" low="10" high="60"></meter>
+                    <div className="meter">
+                        <div className="skale-meter" style={{width: valueCountry[index]+'%'}}>
+                        </div>
+                    </div>
                 </div>
                 ))
             }

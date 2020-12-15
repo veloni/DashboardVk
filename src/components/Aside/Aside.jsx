@@ -1,6 +1,6 @@
 import React from 'react';
 import ButtonSwitch from './ButtonSwitch';
-import vk from '../../svg/vk.svg';
+import vk from '../../svg/vk-icon.svg';
 import home from '../../svg/home.svg';
 import play from '../../svg/play.svg';
 import paper from '../../svg/paper.svg';
@@ -10,7 +10,9 @@ import setting from '../../svg/setting.svg';
 import statistic from '../../svg/statistic.svg';
 import './Aside.scss';
 
-const Aside = () => {
+const Aside = ({
+  switchTheme,
+}) => {
     const iconsList = [home, paper, friends, mail, play, statistic, setting];
     return (
         <aside className="aside">
@@ -21,11 +23,14 @@ const Aside = () => {
                 <img src={src} key={key} className="aside-icon" alt=""/>
               ))}
             </div>
-              <ButtonSwitch/>
+              <ButtonSwitch
+                 switchTheme={switchTheme}
+              />
           </div>
       </aside>
     );
 };
+
 
 export default Aside;
 

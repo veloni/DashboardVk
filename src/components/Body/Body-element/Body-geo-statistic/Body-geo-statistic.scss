@@ -7,8 +7,6 @@
     align-items: center;
     height: 100%;
     width: 30%;
-    background-color: $primaryBackgroundColor;
-    border: 1px solid $mainBorderColor;
     border-radius: 1vw 1vw 1vw 1vw;
 }
 
@@ -36,12 +34,14 @@
     display:flex;
     justify-content: space-between;
     flex-wrap: wrap;
-
 }
 
 .box-small-container-meter{
     height: 25%;
     width: 45%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .box-small-container-meter-title{
@@ -52,7 +52,6 @@
 }
 
 .titlte-text{
-    color:$textColorBlackTheme;
     font-family: Gilroy;
     font-size: 0.7vw;
     font-style: normal;
@@ -63,7 +62,42 @@
 }
 
 .meter{
-    background: $graphMainColor;
-    height: 20%;
+    height: 25%;
     width: 95%;
+    border-radius:1vw 1vw 1vw 1vw;
+    background: $graphMainColor;
+}
+
+.skale-meter{
+    height: 100%;
+    width: 50%;
+    border-radius:1vw 1vw 1vw 1vw;
+    background:$mainBackgroundColorWhiteTheme;
+}
+
+.candle-graph-box-text{
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 6.5vw;
+}
+
+.text-country{
+    font-family: Gilroy;
+    font-size: 1vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.value-country{
+    font-family: Gilroy;
+    font-size: 1vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: right;
 }

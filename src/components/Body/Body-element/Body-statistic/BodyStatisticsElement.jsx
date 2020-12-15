@@ -15,10 +15,11 @@ const BodyStatisticsElement = ({
     peopleCounter,
     percentCounter,
     changeData,
+    isStatsShow,
   } = UseDataState(people, percent);
 
 useEffect(() => {
-  
+
     const interval = setInterval(() => {
       changeData();
     }, 2000);
@@ -39,16 +40,18 @@ useEffect(() => {
               ))}
               </div>
           </div>
-          <div className="body-top-box-container-text js-opacity">
+          <div
+            className={`body-top-box-container-text ${isStatsShow ? 'is-hide' : 'is-show'}`}
+          >
               <span className="secondary-text">
                   {peopleCounter} people
               </span>
-          <span className="percentage-text">
-              <span className="percentage-text-counter">
-                  {percentCounter}
+              <span className="percentage-text">
+                  <span className="percentage-text-counter">
+                      {percentCounter}
+                  </span>
+                  <img src={isArrowUp ? arrowUp : arrowDown} className="point" alt=""/>
               </span>
-              <img src={isArrowUp ? arrowUp : arrowDown} className="point" alt=""/>
-          </span>
           </div>
       </div>
     </div>

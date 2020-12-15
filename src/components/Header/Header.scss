@@ -14,7 +14,6 @@
 }
 
 .header-title-text{
-    color:$textColorBlackTheme;
     font-family: Gilroy;
     font-size: 3.5vw;
     font-style: normal;
@@ -26,21 +25,20 @@
 }
 
 .search{
-    background-color:$primaryBackgroundColor;
-    height: 32px;
-    width: 153px;
+    height: 3vw;
+    width: 15vw;
     padding-left: 25px;
     background-image: url(..//../svg/search.svg);
     background-repeat: no-repeat;
     background-position: left 10px center;
     border-radius: 1vw 1vw 1vw 1vw;
-    border: 1px solid $mainBorderColor;
     margin-left:3vw;
-    color: $textColorBlackTheme;
 }
 
 .notification{
     margin-left:4vw;
+    height: 2vw;
+    width: 3vw;
 }
 
 .header-box-user{
@@ -54,12 +52,21 @@
 }
 
 .text-name-user{
-    color:$textColorBlackTheme;
     font-family: Gilroy;
-    font-size: 20px;
+    font-size: 2.5vw;
     font-style: normal;
     font-weight: 600;
     line-height: 24px;
     letter-spacing: 0em;
     text-align: left;
+}
+
+.avatar-icon{
+    height: 4vw;
+    width: 4vw;
+}
+
+.user-switch{
+    height: 1vw;
+    width: 1vw;
 }

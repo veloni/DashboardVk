@@ -7,8 +7,6 @@
     align-items: center;
     height: 100%;
     width: 65%;
-    background-color: $primaryBackgroundColor;
-    border: 1px solid $mainBorderColor;
     border-radius: 1vw 1vw 1vw 1vw;
 }
 
@@ -34,6 +32,23 @@
     display:flex;
     width: 10.5vw;
     justify-content: space-around;
+}
+
+.icon-graph{
+    height: 1.5vw;
+    width: 1.5vw;
+}
+
+.small-text{
+    display:flex;
+    align-items: center;
+}
+
+.candle-graph-box{
+    display:flex;
+    align-items: center;
+    height: 90%;
+    width: 100%;
 }
 
 

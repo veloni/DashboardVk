@@ -16,8 +16,8 @@ const Header = () => {
               <span className="text-name-user">
                 Anya
               </span>
-              <img src={avatar} alt=""/>
-              <img src={userSwitch} alt=""/>
+              <img className="avatar-icon" src={avatar} alt=""/>
+              <img className="user-switch" src={userSwitch} alt=""/>
           </div>
         </header>
     );

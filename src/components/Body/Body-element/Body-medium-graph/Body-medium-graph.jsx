@@ -5,11 +5,7 @@ import '../../../../vars_and_mixins/colors.scss';
 import iconFollower from './svg/icon-follower.svg';
 import iconTotal from './svg/icon-total.svg';
 import smallArrowDown from './svg/small-arrow-down.svg';
-import * as V from 'victory';
-import { VictoryLine } from 'victory';
-import { VictoryChart } from 'victory';
-import { VictoryScatter } from 'victory';
-import { VictoryAxis } from 'victory';
+import { VictoryLine, VictoryChart, VictoryScatter, VictoryAxis } from 'victory';
 
 const BodyMediumGraph = () => {
 
@@ -24,9 +20,7 @@ const BodyMediumGraph = () => {
         { x: 7, y: 5 },
         { x: 8, y: 9 },
         { x: 9,y: 2 },
-
     ];
-
 
     const secondaryTextColor = "#979797";
 
@@ -62,13 +56,13 @@ const BodyMediumGraph = () => {
                     <span className="main-text"> Audiende reach</span>
                     <div className="box-date">
                         <span className="date"> 31/01/2020 – 06/02/2020 </span>
-                    <img src={smallArrowDown} className="" alt=""/>
+                    <img src={smallArrowDown} className="icon-date-switch" alt=""/>
                     </div>
                    
                     <div className="box-legend">
-                        <img src={iconTotal} className="" alt=""/>
+                        <img className="icon-graphs" src={iconTotal} alt=""/>
                         <span className="small-text"> Total </span>
-                        <img src={iconFollower} className="" alt=""/>
+                        <img className="icon-graphs" src={iconFollower} alt=""/>
                         <span className="small-text"> Follower </span>
                     </div>
                 </div>
@@ -82,7 +76,7 @@ const BodyMediumGraph = () => {
                    ></VictoryAxis>
 
                 <VictoryAxis dependentAxis crossAxis
-                        tickValues={[0,1,2,3,4,5,6,7,8,9]}
+                        tickValues={[0,3,6,9]}
                 />
                    <VictoryLine 
                         interpolation="natural"

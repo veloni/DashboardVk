@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const UseDataState = (
   people,
@@ -9,10 +9,11 @@ const UseDataState = (
   const [peopleCounter, setPeopleCounter] = useState(people);
   const [percentCounter, setPercentCounter] = useState(percent);
   const [saveValuePeople, setSaveValuePeople] = useState(peopleCounter);
-
+  const [isStatsShow, setIsStatsShow] = useState(true);
+  
   const randomPeopleGenerate = () => {
     return ((Math.random() < 0.5) ? -1 : 1) * Math.floor(Math.random() * Math.floor(50));
-   } 
+   }
 
   const randomPeople = randomPeopleGenerate();
 
@@ -24,46 +25,31 @@ const UseDataState = (
     return (((100*randomPeople/saveValuePeople)).toFixed(2));
   };
 
+  useEffect(() => {
+    // console.log(peopleCounter);
+  });
 
   const changeData = () => {
-    
-    const jsOpacity = document.querySelectorAll('.js-opacity');
-  
-    const doingOpacity = (styleOne, styleTwo) => {
-      jsOpacity.forEach((item) => {
-        item.classList.contains(styleOne) ? item.classList.remove(styleTwo) : item.classList.add(styleOne);
-      });
-    }
 
-    doingOpacity('is-hide','is-show');
-
-    setTimeout(() => {
-      doingOpacity('is-show','is-hide');
-    }, 999);
-
+    setIsStatsShow(!isStatsShow);
     const overValuePeople = peopleCounter + randomPeople;
     const overSaveValuePeople = saveValuePeople + randomPeople;
     setSaveValuePeople(overSaveValuePeople >= 0 ? overSaveValuePeople : 10);
 
-    setTimeout(() => {
+    if (isStatsShow){
       setPeopleCounter(overValuePeople >= 0 ? overValuePeople : 10);
       setPercentCounter(overSaveValuePeople >= 0 ? calculationPercents() : 0);
       setIsArrowUp(comparisonPeople() < 0);
-    }, 999);
-
+    }
   };
- 
+  
   return {
     isArrowUp,
     peopleCounter,
     percentCounter,
     changeData,
+    isStatsShow,
   }
 }
 
-
-
 export default UseDataState;
-
-//{ useEffect(() => setInterval(changeData(),10000))}
-
