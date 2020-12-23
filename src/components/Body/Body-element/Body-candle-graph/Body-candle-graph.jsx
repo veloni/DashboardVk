@@ -1,6 +1,5 @@
 import './Body-candle-graph.scss';
 import '../../../../vars_and_mixins/colors.scss';
-import '../../../../App.scss';
 import women from './svg/women.svg';
 import men from './svg/men.svg';
 import { VictoryChart, VictoryBar, VictoryGroup, VictoryAxis } from 'victory';

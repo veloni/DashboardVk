@@ -24,7 +24,7 @@ const Circle = () => {
     
         circle.beginPath();
         circle.fillStyle = '#FFFFFF';
-        circle.font = "2vw Gilroy";
+        circle.font = "2rem Gilroy";
         circle.fillText(dektopValue+'%',50,150);
          
         circle.beginPath();
@@ -38,12 +38,12 @@ const Circle = () => {
     
         circle.beginPath();
         circle.fillStyle = '#FFFFFF';
-        circle.font = "2vw Gilroy";
+        circle.font = "2rem Gilroy";
         circle.fillText(100-dektopValue+'%',140,100);
     },[]);
     
     return (
-        <canvas ref={refCanvas} id="circle"/>
+        <canvas ref={refCanvas} id="circle" className="canvas-circle-graph"/>
          )
     ;
 };

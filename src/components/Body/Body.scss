@@ -1,5 +1,4 @@
-@import '../../vars_and_mixins/colors.scss';
-@import '../../App.scss';
+
 
 .body-main-section{
     display:flex;
@@ -17,6 +16,7 @@
     flex-direction: column;
     justify-content: space-between;
 }
+
 
 .body-top{
     display:flex;

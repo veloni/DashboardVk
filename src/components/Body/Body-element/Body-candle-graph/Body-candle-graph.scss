@@ -1,5 +1,3 @@
-@import '../../../../vars_and_mixins/colors.scss';
-@import '../../../../App.scss';
 
 .candle-graph{
     display: flex;
@@ -30,6 +28,7 @@
 
 .candle-box-legend{
     display:flex;
+    align-items: center;
     width: 10.5vw;
     justify-content: space-around;
 }

@@ -1,6 +1,6 @@
 import './Body-geo-statistic.scss';
 import '../../../../vars_and_mixins/colors.scss';
-import '../../../../App.scss';
+
 
 const BodyGeoStatistic = () => {
     const country = ["Russia", "China", "Ucraine", "USA", "Mongolia", "Other"];

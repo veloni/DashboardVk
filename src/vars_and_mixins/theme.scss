@@ -1,5 +1,3 @@
-@import './colors.scss';
-
 @mixin changeColor($color){
     transition: 1s background-color;
     background-color:$color;
@@ -154,3 +152,6 @@
         @include changeTextColor($textColorBlackTheme);
     }
 }
+
+
+

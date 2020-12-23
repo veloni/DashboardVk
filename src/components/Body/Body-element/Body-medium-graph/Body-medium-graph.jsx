@@ -1,7 +1,5 @@
 import './Body-medium-graph.scss';
 import '../../../../vars_and_mixins/colors.scss';
-import '../../../../App.scss';
-import '../../../../vars_and_mixins/colors.scss';
 import iconFollower from './svg/icon-follower.svg';
 import iconTotal from './svg/icon-total.svg';
 import smallArrowDown from './svg/small-arrow-down.svg';
