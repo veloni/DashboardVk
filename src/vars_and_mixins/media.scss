@@ -1,0 +1,260 @@
+
+@mixin mobile500(){
+    @media (max-device-width: 500px){
+        .body-top{
+            height: 20%;
+        }
+        .body-medium-box{
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            height: 40%;
+            width: 100%;
+        }
+
+        .body-bottom-box{
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            height: 75%;
+            width: 100%;
+        }
+
+        .body-top-box-container{
+            height: 90%;
+        }
+
+        .body-main-section{
+            height: 85%;
+            justify-content: space-evenly;
+        }
+
+        .candle-box-legend{
+        width: 30%;
+        }
+
+        .candle-graph-box-text{
+        width: 25%;
+        }
+
+        .search{
+        height: 60%;
+        width: 50%;
+        }
+
+        .text-name-user{
+        font-size: 3vw;
+        }
+
+        .title-graph{
+            width: 100%;
+            height: 20%;
+        }
+
+        .header-box-user{
+        width: 17.5%;
+        }
+
+        .avatar-icon{
+        height: 6vw;
+        width: 6vw;
+        }
+
+        .circle-graph-text-box{
+        width: 90%;
+        }
+
+        .title-candle-graph{
+        width: 95%;
+        }
+
+        .secondary-text{
+            font-size: 50%;
+        }
+
+        .lineal-graph{
+            width: 100%;
+            height: 45%;
+        }
+
+        .date{
+        font-size: 2vw;
+        }
+        
+        .icon-graph{
+        font-size: 1.5vw;
+        }
+
+        .small-text{
+        font-size: 1.8vw;
+        }
+
+
+        .circle-graph{
+            width: 100%;
+            height: 45%;
+        }
+
+        .candle-graph{
+            height:45%;
+            width: 100%;
+        }
+
+        .geo-statistic{
+            height: 45%;
+            width: 100%;
+        }
+
+        .main-text{
+            font-size: 3.5vw;
+        }
+
+        .percentage-text{
+            font-size: 2.5vw;
+        }
+
+        .aside{
+            width: 5vw;
+        }
+
+        .aside{
+        width: 7vw;
+        }
+
+        .box-aside-icons{
+        height: 100%;
+        }
+        
+        .aside-icon{
+        height: 5vw;
+        width: 5vw;
+        }
+
+        .circle{
+        width: 20vw;
+        }
+    
+        .text-country{
+        font-size: 2.5vw;
+        }
+
+        .value-conutry{
+        font-size: 2.5vw;
+        }
+
+        .small-text{
+        font-size: 3vw;
+        }
+
+        .secondary-small-text{
+        font-size: 3vw;
+        }
+
+        .title-geo-statistic-graph{
+        width:100%;
+        } 
+    }
+}
+
+
+@mixin mobile1000(){
+    @media (min-device-width: 500px) and (max-device-width: 1000px){
+        .body-top{
+        
+        }
+        .body-medium-box{
+       
+        }
+        .body-bottom-box{
+       
+        }
+        .body-top-box-container{
+       
+        }
+        .body-main-section{
+    
+        }
+        .candle-box-legend{
+
+        }
+        .candle-graph-box-text{
+
+        }
+        .search{
+        }
+        .text-name-user{
+        font-size: 2vw;
+        }
+        .title-graph{
+
+        }
+        .header-box-user{
+
+        }
+        .avatar-icon{
+
+        }
+        .circle-graph-text-box{
+        }
+        .title-candle-graph{
+
+        }
+        .secondary-text{
+
+        }
+        .lineal-graph{
+        }
+        .date{
+        font-size: 1vw;
+        }
+        .icon-graph{
+        font-size: 1vw;
+        }
+        .small-text{
+        font-size: 1vw;
+        }
+        .circle-graph{
+        }
+        .candle-graph{
+
+        }
+        .geo-statistic{
+
+        }
+        .main-text{
+            font-size: 1.5vw;
+        }
+        .percentage-text{
+            font-size: 1.75vw;
+        }
+        .aside{
+        }
+        .aside{
+
+        }
+        .box-aside-icons{
+
+        }
+        .aside-icon{
+        }
+        .circle{
+        }
+        .text-country{
+        font-size: 1.5vw;
+        }
+        .value-conutry{
+        font-size: 1.5vw;
+        }
+        .small-text{
+        font-size: 1.5vw;
+        }
+        .secondary-small-text{
+        font-size: 1.5vw;
+        }
+        .title-geo-statistic-graph{
+        } 
+    }
+}
+
+
+
