@@ -13,6 +13,9 @@ const BodyCircleGraphs = () => {
                 <div className="circle-graph-text-box">
                     <span className="main-text">
                         Reach by devices
+                        <span className="text-for-mobile">
+                        Desktop 20%,   Mobile 80%
+                        </span>
                     </span>
                 </div>
            

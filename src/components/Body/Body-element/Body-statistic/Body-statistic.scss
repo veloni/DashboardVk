@@ -40,11 +40,11 @@
 }
 
 .is-show{
-    transition: opacity 1s;
     opacity:1;
+    transition: opacity 1s;
 }
 
 .is-hide{
-    transition: opacity 1s;
     opacity:0;
+    transition: opacity 1s;
 }
