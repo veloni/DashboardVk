@@ -1,72 +1,63 @@
-
 @font-face{
-    font-family: 'Gilroy';
-    src: url("../../fonts/gilroy-medium.ttf");
+	font-family: "Gilroy";
+	src: url("../../fonts/gilroy-medium.ttf");
 }
-
 .header{
-    height:8.5vw;
-    width: 90%;
-    display:flex;
-    align-items:center;
-    padding-left:7vw;
+	height: 8.5vw;
+	width: 90%;
+	display: flex;
+	align-items: center;
+	padding-left: 7vw;
 }
-
 .header-title-text{
-    font-family: Gilroy;
-    font-size: 3.5vw;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 36px;
-    letter-spacing: 0em;
-    text-align: left;
-    margin-left:2.5vw;
+	font-family: Gilroy;
+	font-size: 3.5vw;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 36px;
+	letter-spacing: 0em;
+	text-align: left;
+	margin-left: 2.5vw;
 }
-
 .search{
-    height: 3vw;
-    width: 15vw;
-    padding-left: 25px;
-    background-image: url(..//../svg/search.svg);
-    background-repeat: no-repeat;
-    background-position: left 10px center;
-    border-radius: 1vw 1vw 1vw 1vw;
-    margin-left:3vw;
-    outline: none;
+	height: 3vw;
+	width: 15vw;
+	padding-left: 25px;
+	background-image: url(..//../svg/search.svg);
+	background-repeat: no-repeat;
+	background-position: left 10px center;
+	border-radius: 1vw 1vw 1vw 1vw;
+	margin-left: 3vw;
+	outline: none;
 }
-
 .notification{
-    margin-left:4vw;
-    height: 2vw;
-    width: 3vw;
+	margin-left: 4vw;
+	height: 2vw;
+	width: 3vw;
 }
-
 .header-box-user{
-    display:flex;
-    align-items: center;
-    justify-content: space-around;
-    position: absolute;
-    right:0;
-    width: 12.5vw;
-    padding-right:2vw;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	position: absolute;
+	right: 0;
+	width: 12.5vw;
+	padding-right: 2vw;
 }
-
 .text-name-user{
-    font-family: Gilroy;
-    font-size: 2.5vw;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 24px;
-    letter-spacing: 0em;
-    text-align: left;
+	font-family: Gilroy;
+	font-size: 2.5vw;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 24px;
+	letter-spacing: 0em;
+	text-align: left;
 }
-
 .avatar-icon{
-    height: 4vw;
-    width: 4vw;
+	height: 4vw;
+	width: 4vw;
 }
-
 .user-switch{
-    height: 1vw;
-    width: 1vw;
+	height: 1vw;
+	width: 1vw;
 }

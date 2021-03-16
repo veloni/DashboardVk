@@ -1,50 +1,41 @@
-
-
 .body-top-box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 27.5vw;
-    border-radius: 1vw 1vw 1vw 1vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 27.5vw;
+	border-radius: 1vw 1vw 1vw 1vw;
 }
-
 .body-top-box-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 80%;
-    width: 23.5vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 80%;
+	width: 23.5vw;
 }
-
 .body-top-box-container-text{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
-
 .point{
-    height: 0.5vw;
-    width: 0.5vw;
+	height: 0.5vw;
+	width: 0.5vw;
 }
-
 .box-point{
-    display:flex;
-    width: 3vw;
-    align-items: center;
-    justify-content: space-evenly;
+	display: flex;
+	width: 3vw;
+	align-items: center;
+	justify-content: space-evenly;
 }
-
-.percentage-text-counter {
-    margin-right: 10px;
+.percentage-text-counter{
+	margin-right: 10px;
 }
-
 .is-show{
-    opacity:1;
-    transition: opacity 1s;
+	opacity: 1;
+	transition: opacity 1s;
 }
-
 .is-hide{
-    opacity:0;
-    transition: opacity 1s;
+	opacity: 0;
+	transition: opacity 1s;
 }

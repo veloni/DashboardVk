@@ -5,38 +5,41 @@ import mobileViews from './svg/mobile-views.svg';
 import Circle from './Circle';
 
 const BodyCircleGraphs = () => {
-
-
-    return (
-        <div className="circle-graph">
-            <div className="circle-graph-box">
-                <div className="circle-graph-text-box">
-                    <span className="main-text">
-                        Reach by devices
-                        <span className="text-for-mobile">
-                        Desktop 20%,   Mobile 80%
-                        </span>
-                    </span>
-                </div>
-           
-                <div className="box-graph-circle">
-                    <Circle/>
-                    <div className="circle-graph-legend">
-                        <div className="box-legend-circle">
-                            <img src={desktop} className="icon-circle-graph" alt=""/>
-                            <span className="text-legend-circle"> Desktop </span>
-                        </div>
-                        <div className="box-legend-circle">
-                            <img src={mobileViews} className="icon-circle-graph" alt=""/>
-                            <span className="text-legend-circle"> Mobile Views </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-         )
-    ;
+	return (
+		<div className="circle-graph">
+			<div className="circle-graph-box">
+				<div className="circle-graph-text-box">
+					<span className="main-text">
+						Reach by devices
+						<span className="text-for-mobile">
+						Desktop 20%,   Mobile 80%
+						</span>
+					</span>
+				</div>
+				<div className="box-graph-circle">
+					<Circle/>
+					<div className="circle-graph-legend">
+						<div className="box-legend-circle">
+							<img 
+								src={desktop} 
+								className="icon-circle-graph" 
+								alt=""
+							/>
+							<span className="text-legend-circle"> Desktop </span>
+						</div>
+						<div className="box-legend-circle">
+							<img
+								src={mobileViews} 
+								className="icon-circle-graph" 
+								alt=""
+							/>
+							<span className="text-legend-circle"> Mobile Views </span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	);
 };
 
 export default BodyCircleGraphs;

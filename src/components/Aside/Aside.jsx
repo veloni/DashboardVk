@@ -14,19 +14,20 @@ const Aside = ({
   switchTheme,
 }) => {
     const iconsList = [home, paper, friends, mail, play, statistic, setting];
+
     return (
-        <aside className="aside">
-          <div className="box-aside-main">
-            <img src={vk} className="vk-icon" alt=""/>
-            <div className="box-aside-icons">
-              {iconsList.map((src,key) => (
-                <img src={src} key={key} className="aside-icon" alt=""/>
-              ))}
-            </div>
-              <ButtonSwitch
-                 switchTheme={switchTheme}
-              />
+      <aside className="aside">
+        <div className="box-aside-main">
+          <img src={vk} className="vk-icon" alt=""/>
+          <div className="box-aside-icons">
+            {iconsList.map((src,key) => (
+              <img src={src} key={key} className="aside-icon" alt=""/>
+            ))}
           </div>
+            <ButtonSwitch
+                switchTheme={switchTheme}
+            />
+        </div>
       </aside>
     );
 };

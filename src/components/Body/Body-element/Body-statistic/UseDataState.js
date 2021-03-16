@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 const UseDataState = (
   people,
@@ -13,7 +13,7 @@ const UseDataState = (
   
   const randomPeopleGenerate = () => {
     return ((Math.random() < 0.5) ? -1 : 1) * Math.floor(Math.random() * Math.floor(50));
-   }
+  }
 
   const randomPeople = randomPeopleGenerate();
 
@@ -22,21 +22,18 @@ const UseDataState = (
   };
 
   const calculationPercents = () =>{
-    return (((100*randomPeople/saveValuePeople)).toFixed(2));
+    return (((100 * randomPeople / saveValuePeople)).toFixed(2));
   };
 
-  useEffect(() => {
-    // console.log(peopleCounter);
-  });
-
   const changeData = () => {
-
     setIsStatsShow(!isStatsShow);
+
     const overValuePeople = peopleCounter + randomPeople;
     const overSaveValuePeople = saveValuePeople + randomPeople;
+
     setSaveValuePeople(overSaveValuePeople >= 0 ? overSaveValuePeople : 10);
 
-    if (isStatsShow){
+    if (isStatsShow) {
       setPeopleCounter(overValuePeople >= 0 ? overValuePeople : 10);
       setPercentCounter(overSaveValuePeople >= 0 ? calculationPercents() : 0);
       setIsArrowUp(comparisonPeople() < 0);
