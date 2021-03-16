@@ -1,4 +1,4 @@
-import './Body-candle-graph.scss';
+import './BodyCandleGraph.scss';
 import '../../../../vars_and_mixins/colors.scss';
 import women from './svg/women.svg';
 import men from './svg/men.svg';
@@ -81,7 +81,7 @@ const BodyCandleGraph = () => {
 							domain={{ x: [0, 9], y:[0 , 80] }}
 						>
 							<VictoryAxis 
-								tickValues={{x: [0, 9]}}
+								tickValues={[0, 9]}
 							/>
 							<VictoryAxis 
 								dependentAxis 

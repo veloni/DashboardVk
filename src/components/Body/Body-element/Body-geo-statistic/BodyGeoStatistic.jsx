@@ -1,4 +1,4 @@
-import './Body-geo-statistic.scss';
+import './BodyGeoStatistic.scss';
 import '../../../../vars_and_mixins/colors.scss';
 
 const BodyGeoStatistic = () => {
@@ -19,7 +19,10 @@ const BodyGeoStatistic = () => {
 				<div className="box-container-meter">
 					{    
 						country.map((item,index) => (
-							<div className="box-small-container-meter"> 
+							<div 
+								className="box-small-container-meter" 
+								key={index}
+							> 
 								<div className="box-small-container-meter-title titlte-text"> 
 									<span className="text-country"> {item} </span>
 									<span className="value-country"> {valueCountry[index]}% </span>
@@ -27,7 +30,7 @@ const BodyGeoStatistic = () => {
 								<div className="meter">
 									<div 
 										className="skale-meter" 
-										style={{width: `$valueCountry[index] %`}}>
+										style={{width:valueCountry[index] + "%"}}>
 									</div>
 								</div>
 							</div>

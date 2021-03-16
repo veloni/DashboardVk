@@ -35,8 +35,12 @@ const BodyStatisticsElement = ({
             {title}
             </span>
             <div className="box-point">
-              {[...Array(3)].map(() => (
-                <img src={point} className="point" alt=""/>
+              {[...Array(3)].map((key) => (
+                <img 
+                  key={key}
+                  src={point} 
+                  className="point" 
+                  alt=""/>
               ))}
             </div>
         </div>

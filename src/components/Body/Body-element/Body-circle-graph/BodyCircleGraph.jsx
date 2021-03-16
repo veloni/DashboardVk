@@ -1,4 +1,4 @@
-import './Body-circle-graph.scss';
+import './BodyCircleGraph.scss';
 import '../../../../vars_and_mixins/colors.scss';
 import desktop from './svg/desktop.svg';
 import mobileViews from './svg/mobile-views.svg';

@@ -1,10 +1,10 @@
 import React from 'react';
 import './Body.scss';
-import BodyStatistic from './Body-element/Body-statistic/Body-statistic';
-import BodyMediumGraph from './Body-element/Body-medium-graph/Body-medium-graph';
-import BodyCircleGraph from './Body-element/Body-circle-graph/Body-circle-graph';
-import BodyCandleGraph from './Body-element/Body-candle-graph/Body-candle-graph';
-import BodyGeoStatistic from './Body-element/Body-geo-statistic/Body-geo-statistic';
+import BodyStatistic from './Body-element/Body-statistic/BodyStatistic';
+import BodyMediumGraph from './Body-element/Body-medium-graph/BodyMediumGraph';
+import BodyCircleGraph from './Body-element/Body-circle-graph/BodyCircleGraph';
+import BodyCandleGraph from './Body-element/Body-candle-graph/BodyCandleGraph';
+import BodyGeoStatistic from './Body-element/Body-geo-statistic/BodyGeoStatistic';
 
 const Body = () => {
 	return (

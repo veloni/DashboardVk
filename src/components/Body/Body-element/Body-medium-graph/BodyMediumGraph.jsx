@@ -1,4 +1,4 @@
-import './Body-medium-graph.scss';
+import './BodyMediumGraph.scss';
 import '../../../../vars_and_mixins/colors.scss';
 import iconFollower from './svg/icon-follower.svg';
 import iconTotal from './svg/icon-total.svg';
