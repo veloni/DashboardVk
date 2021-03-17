@@ -24,9 +24,7 @@ const Aside = ({
               <img src={src} key={key} className="aside-icon" alt=""/>
             ))}
           </div>
-            <ButtonSwitch
-                switchTheme={switchTheme}
-            />
+          <ButtonSwitch  switchTheme={switchTheme} />
         </div>
       </aside>
     );

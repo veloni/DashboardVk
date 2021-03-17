@@ -9,6 +9,7 @@
   @include mobile500();
   @include mobile1000();
 }
+
 body {
   background-color: $mainBackgroundColor;
   height: 100%;

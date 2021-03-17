@@ -1,6 +1,6 @@
 @import '../../vars_and_mixins/colors.scss';
 
-  .aside{
+  .aside {
     width: 7vw;
     height: 100%;
     display:flex;
@@ -10,14 +10,16 @@
     top:0;
     left:0;
   }
-  .box-aside-main{
+
+  .box-aside-main {
     height: 95%;
     display:flex;
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
   }
-  .box-aside-icons{
+
+  .box-aside-icons {
     height: 50%;
     display:flex;
     align-items: center;
@@ -25,15 +27,18 @@
     justify-content: space-evenly;
     width:80%;
   }
-  .aside-icon{
+
+  .aside-icon {
     padding-bottom:3vw;
     height: 2vw;
     width: 2vw;
   }
-  .aside-icon:last-child{
+
+  .aside-icon:last-child { 
     padding-bottom:0;
   }
-  .button-switch-black-theme{
+
+  .button-switch-black-theme {
     width: 4vw;
     height: 2vw;
     background-color: $graphMainColor;
@@ -42,7 +47,8 @@
     display:flex;
     align-items: center;
   }
-  .button-switch-black-theme-cirlce{
+
+  .button-switch-black-theme-cirlce {
     margin-right: 0.3vw;
     width: 1vw;
     height: 1vw;
@@ -52,7 +58,8 @@
     margin-left:2vw;
     transition: 1s margin-left;
   }
-  .button-switch-white-theme{
+
+  .button-switch-white-theme {
     width: 4vw;
     height: 2vw;
     background-color: $mainBackgroundColorWhiteTheme;
@@ -61,7 +68,8 @@
     display:flex;
     align-items: center;
   }
-  .button-switch-white-theme-cirlce{
+
+  .button-switch-white-theme-cirlce {
     width: 1.4vw;
     height: 1.4vw;
     background-color: $graphMainColor;
@@ -69,7 +77,8 @@
     margin-left:0.4vw;
     transition: 1s margin-left;
   }
-  .vk-icon{
+
+  .vk-icon {
     height: 5vw;
     width: 5vw;
   }

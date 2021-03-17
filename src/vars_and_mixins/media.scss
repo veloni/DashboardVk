@@ -1,175 +1,219 @@
 @mixin mobile500(){
-	@media (max-device-width: 500px){
-		.body-top{
+
+	@media (max-device-width: 500px) {
+		.body-top {
 			height: 20%;
 		}
-		.body-medium-box{
+
+		.body-medium-box {
 			flex-direction: column;
 			align-items: center;
 			justify-content: space-around;
 			height: 60%;
 			width: 100%;
 		}
-		.body-bottom-box{
+
+		.body-bottom-box {
 			flex-direction: column;
 			align-items: center;
 			justify-content: space-around;
 			height: 100%;
 			width: 100%;
 		}
-		.body-top-box-container{
+
+		.body-top-box-container {
 			height: 90%;
 		}
-		.body-main-section{
+
+		.body-main-section {
 			height: 90%;
 			justify-content: space-evenly;
 		}
-		.candle-box-legend{
+
+		.candle-box-legend {
 			width: 30%;
 		}
-		.box-legend{
+
+		.box-legend {
 			width: 35%;
 		}
-		.candle-graph-box-text{
+
+		.candle-graph-box-text {
 			width: 25%;
 		}
-		.search{
+
+		.search {
 			height: 60%;
 			width: 50%;
 		}
-		.text-name-user{
+
+		.text-name-user {
 			font-size: 3vw;
 		}
-		.title-graph{
+
+		.title-graph {
 			width: 100%;
 			height: 20%;
 		}
-		.header-box-user{
+
+		.header-box-user {
 			width: 17.5%;
 		}
-		.avatar-icon{
+
+		.avatar-icon {
 			height: 6vw;
 			width: 6vw;
 		}
-		.icon-graphs{
+
+		.icon-graphs {
 			width: 3vw;
 			height: 3vw;
 		}
-		.circle-graph-text-box{
+
+		.circle-graph-text-box {
 			width: 90%;
 			justify-content: center;
 		}
-		.title-candle-graph{
+
+		.title-candle-graph {
 			width: 95%;
 		}
-		.secondary-text{
+
+		.secondary-text {
 			font-size: 50%;
 		}
-		.lineal-graph{
+
+		.lineal-graph {
 			margin-top: 10px;
 			width: 100%;
 			height: 50%;
 		}
-		.box-graph-circle{
-			display: none;
+
+		.box-graph-circle {
+			display: none; 
 		}
-		.text-for-mobile{
+
+		.text-for-mobile {
 			display: flex;
 		}
-		.date{
+
+		.date {
 			font-size: 2vw;
 		}
-		.icon-graph{
+
+		.icon-graph {
 			font-size: 1.5vw;
 		}
-		.small-text{
+
+		.small-text {
 			font-size: 1.8vw;
 		}
-		.circle-graph{
+		
+		.circle-graph {
 			width: 100%;
 			height: 30%;
 		}
-		.candle-graph{
+
+		.candle-graph {
 			height:45%;
 			width: 100%;
 		}
-		.geo-statistic{
+
+		.geo-statistic {
 			height: 45%;
 			width: 100%;
 		}
-		.main-text{
+
+		.main-text {
 			font-size: 3.5vw;
 			display: flex;
 			flex-direction: column;
 			align-items: center;
 			justify-content: center;
 		}
-		.percentage-text{
+
+		.percentage-text {
 			font-size: 2.5vw;
 		}
-		.aside{
-			width: 5vw;
-		}
-		.aside{
+
+		.aside {
 			width: 7vw;
 		}
-		.box-aside-icons{
+
+		.box-aside-icons {
 			height: 100%;
 		}
-		.aside-icon{
+
+		.aside-icon {
 			height: 5vw;
 			width: 5vw;
 		}
-		.circle{
+
+		.circle {
 			width: 20vw;
 		}
-		.text-country{
+
+		.text-country {
 			font-size: 2.5vw;
 		}
-		.value-conutry{
+
+		.value-conutry {
 			font-size: 2.5vw;
 		}
-		.small-text{
+
+		.small-text {
 			font-size: 3vw;
 		}
-		.secondary-small-text{
+
+		.secondary-small-text {
 			font-size: 3vw;
 		}
-		.title-geo-statistic-graph{
-			width:100%;
+
+		.title-geo-statistic-graph {
+			width: 100%;
 		}
+
 	}
 }
 @mixin mobile1000(){
-	@media (min-device-width: 500px) and (max-device-width: 1000px){
-		.text-name-user{
+	@media (min-device-width: 500px) and (max-device-width: 1000px) {
+		.text-name-user {
 			font-size: 2vw;
 		}
-		.date{
+
+		.date {
 			font-size: 1vw;
 		}
-		.icon-graph{
+
+		.icon-graph {
 			font-size: 1vw;
 		}
-		.small-text{
+
+		.small-text {
 			font-size: 1vw;
 		}
-		.main-text{
+
+		.main-text {
 			font-size: 1.5vw;
 		}
-		.percentage-text{
+
+		.percentage-text {
 			font-size: 1.75vw;
 		}
-		.text-country{
+
+		.text-country {
 			font-size: 1.5vw;
 		}
-		.value-conutry{
+
+		.value-conutry { 
 			font-size: 1.5vw;
 		}
-		.small-text{
+
+		.small-text {
 			font-size: 1.5vw;
 		}
-		.secondary-small-text{
+
+		.secondary-small-text {
 			font-size: 1.5vw;
 		}
 	}

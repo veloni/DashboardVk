@@ -1,4 +1,4 @@
-.body-main-section{
+.body-main-section {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -6,29 +6,34 @@
 	height: 80%;
 	padding-left: 7vw;
 }
-.body-main-box{
+
+.body-main-box {
 	width: 95%;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 }
-.body-top{
+
+.body-top {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	height: 25%;
 }
-%body-medium-bottom-box{
+
+%body-medium-bottom-box {
 	display: flex;
 	flex-direction: row;
 	height: 30%;
 	justify-content: space-between;
 }
-.body-medium-box{
+
+.body-medium-box {
 	@extend %body-medium-bottom-box;
 }
-.body-bottom-box{
+
+.body-bottom-box {
 	@extend %body-medium-bottom-box;
 }
 

@@ -1,5 +1,5 @@
 
-.lineal-graph{
+.lineal-graph {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -7,7 +7,8 @@
 	width: 72.5%;
 	border-radius: 1vw 1vw 1vw 1vw;
 }
-.lineal-graph-continer{
+
+.lineal-graph-continer {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
@@ -15,7 +16,8 @@
 	height: 80%;
 	width: 90%;
 }
-.title-graph{
+
+.title-graph { 
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -23,11 +25,13 @@
 	height: 20%;
 	width:60vw;
 }
-.box-date{
+
+.box-date { 
 	display: flex;
 	align-items: center;
 }
-.date{
+
+.date {
 	font-family: Gilroy;
 	font-size: 1vw;
 	font-style: normal;
@@ -36,18 +40,21 @@
 	letter-spacing: 0em;
 	text-align: left;
 }
-.box-legend{
+
+.box-legend {
 	width: 25%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
 	align-items: center;
 }
-.icon-graphs{
+
+.icon-graphs {
 	height: 1.5vw;
 	width: 1.5vw;
 }
-.icon-date-switch{
+
+.icon-date-switch {
 	height: 1vw;
 	width: 1vw;
 	padding-left: 1vw;

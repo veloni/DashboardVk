@@ -1,4 +1,4 @@
-.body-top-box{
+.body-top-box {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -6,36 +6,43 @@
 	width: 27.5vw;
 	border-radius: 1vw 1vw 1vw 1vw;
 }
-.body-top-box-container{
+
+.body-top-box-container {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	height: 80%;
 	width: 23.5vw;
 }
-.body-top-box-container-text{
+
+.body-top-box-container-text {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
-.point{
+
+.point {
 	height: 0.5vw;
 	width: 0.5vw;
 }
-.box-point{
+
+.box-point {
 	display: flex;
 	width: 3vw;
 	align-items: center;
 	justify-content: space-evenly;
 }
-.percentage-text-counter{
+
+.percentage-text-counter { 
 	margin-right: 10px;
 }
-.is-show{
+
+.is-show {
 	opacity: 1;
 	transition: opacity 1s;
 }
-.is-hide{
+
+.is-hide {
 	opacity: 0;
 	transition: opacity 1s;
 }

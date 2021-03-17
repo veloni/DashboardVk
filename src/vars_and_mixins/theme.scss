@@ -1,154 +1,190 @@
-@mixin changeColor($color){
+@mixin changeColor($color) {
 	background-color:$color;
 	transition: 1s background-color;
 }
 
-@mixin changeTextColor($color){
+@mixin changeTextColor($color) {
 	color:$color;
 	transition: 1s color;
 }
 
-@mixin changeAsideBorder($color){
+@mixin changeAsideBorder($color) {
 	border-right: 1px solid $color;
 }
 
-@mixin changeBorder($color){
+@mixin changeBorder($color) {
 	border: 1px solid $color;
 }
 
 
-.white-theme{
+.white-theme {
 	@include changeColor($mainBackgroundColorWhiteTheme);
-	.header{
+	.header {
 		@include changeColor($mainBackgroundColorWhiteTheme);      
 	}
-	.search{
+
+	.search {
 		@include changeColor($primaryBackgroundColorWhiteTheme);
 		@include changeBorder($mainBorderColorWhiteTheme);
 	}
-	.text-name-user{
+
+	.text-name-user {
 		@include changeTextColor($textColorWhiteTheme);
 	}
-	.aside{
+
+	.aside {
 		@include changeColor($primaryBackgroundColorWhiteTheme);
 		@include changeAsideBorder($mainBorderColorWhiteTheme);
 	}
-	.header-title-text{
+
+	.header-title-text {
 		@include changeTextColor($textColorWhiteTheme);
 	}
-	.body-top-box{
+
+	.body-top-box {
 		@include changeBorder($mainBorderColorWhiteTheme);
 		@include changeColor($mainBackgroundColorWhiteTheme);  
 	}
-	.main-text{
+
+	.main-text {
 		@include changeTextColor($textColorWhiteTheme);
 	}
-	.secondary-text{
+
+	.secondary-text {
 		@include changeTextColor($textColorWhiteTheme);
 	}
-	.lineal-graph{
+
+	.lineal-graph {
+		@include changeBorder($mainBorderColorWhiteTheme);
+		@include changeColor($mainBackgroundColorWhiteTheme); 
+	} 
+
+	.date {
+		@include changeTextColor($textColorWhiteTheme);
+	}
+
+	.small-text {
+		@include changeTextColor($textColorWhiteTheme);
+	}
+
+	.candle-graph {
 		@include changeBorder($mainBorderColorWhiteTheme);
 		@include changeColor($mainBackgroundColorWhiteTheme); 
 	}
-	.date{
-		@include changeTextColor($textColorWhiteTheme);
-	}
-	.small-text{
-		@include changeTextColor($textColorWhiteTheme);
-	}
-	.candle-graph{
+
+	.geo-statistic {
 		@include changeBorder($mainBorderColorWhiteTheme);
 		@include changeColor($mainBackgroundColorWhiteTheme); 
 	}
-	.geo-statistic{
+
+	.circle-graph {
 		@include changeBorder($mainBorderColorWhiteTheme);
 		@include changeColor($mainBackgroundColorWhiteTheme); 
 	}
-	.circle-graph{
-		@include changeBorder($mainBorderColorWhiteTheme);
-		@include changeColor($mainBackgroundColorWhiteTheme); 
-	}
-	.secondary-small-text{
+
+	.secondary-small-text {
 		@include changeTextColor($textSecondaryWhiteTheme);
 	}
-	.aside-icon{
+
+	.aside-icon {
 		filter: brightness(50%);
 	}
+	
 	.text-country{
 		@include changeTextColor($borderWhiteTheme);
 	}
-	.value-country{
+
+	.value-country {
 		@include changeTextColor($borderWhiteTheme);
 	}
-	.skale-meter{
+
+	.skale-meter { 
 		@include changeColor($textColorBlackTheme);
 	}
-	.text-legend-circle{
+
+	.text-legend-circle {
 		@include changeTextColor($borderWhiteTheme);
 	}
 }
 
-.black-theme{
+.black-theme {
 	@include changeColor($mainBackgroundColor);
-	.header{
+	.header {
 		@include changeColor($mainBackgroundColor);      
 	}
-	.search{
+
+	.search {
 		@include changeColor($primaryBackgroundColor);
 		@include changeBorder($mainBorderColor);
 	}
-	.text-name-user{
+
+	.text-name-user {
 		@include changeTextColor($textColorBlackTheme);
 	}
-	.aside{
+
+	.aside {
 		@include changeColor($primaryBackgroundColor);
 		@include changeAsideBorder($mainBorderColor);
 	}
-	.header-title-text{
+
+	.header-title-text {
 		@include changeTextColor($textColorBlackTheme);
 	}
-	.body-top-box{
+
+	.body-top-box {
 		@include changeBorder($mainBorderColor);
 		@include changeColor($primaryBackgroundColor); 
 	}
-	.main-text{
+
+	.main-text {
 		@include changeTextColor($textColorBlackTheme);
 	}
-	.secondary-text{
+
+	.secondary-text {
 		@include changeTextColor($textColorBlackTheme);
 	}
-	.lineal-graph{
+
+	.lineal-graph {
 		@include changeBorder($mainBorderColor);
 		@include changeColor($primaryBackgroundColor); 
 	}
-	.date{
+
+	.date {
 		@include changeTextColor($textColorBlackTheme);
 	}
-	.small-text{
+
+	.small-text {
 		@include changeTextColor($textColorBlackTheme);
 	}
-	.candle-graph{
+
+	.candle-graph {
 		@include changeBorder($mainBorderColor);
 		@include changeColor($primaryBackgroundColor);  
 	}
-	.geo-statistic{
+
+	.geo-statistic {
 		@include changeBorder($mainBorderColor);
 		@include changeColor($primaryBackgroundColor);  
 	}
-	.circle-graph{
+
+	.circle-graph {
 		@include changeBorder($mainBorderColor);
 		@include changeColor($primaryBackgroundColor);  
 	}
-	.text-country{
+
+	.text-country {
 		@include changeTextColor($textColorBlackTheme);
 	}
-	.value-country{
+
+	.value-country {
 		@include changeTextColor($secondaryTextColor);
 	}
-	.skale-meter{
+
+	.skale-meter {
 		@include changeColor($mainBorderColor);
 	}
-	.text-legend-circle{
+	
+	.text-legend-circle {
 		@include changeTextColor($textColorBlackTheme);
 	}
 }

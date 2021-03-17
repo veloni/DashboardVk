@@ -1,11 +1,12 @@
-.circle-graph{
+.circle-graph {
 	display: flex;
 	align-items: left;
 	justify-content: center;
 	width: 23.5%;
 	border-radius: 1vw 1vw 1vw 1vw;
 }
-.circle-graph-box{
+
+.circle-graph-box {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -13,38 +14,44 @@
 	height: 95%;
 	flex-direction: column;
 }
-.circle-graph-text-box{
+
+.circle-graph-text-box {
 	display: flex;
 	align-items: center;
 	justify-content: left;
 	height: 25%;
 	width: 90%;
 }
-.box-graph-circle{
+
+.box-graph-circle {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	height: 80%;
 	width: 80%;
 }
-.circle-graph-legend{
+
+.circle-graph-legend {
 	height: 5vw;
 	width: 8vw;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 }
-.box-legend-circle{
+
+.box-legend-circle {
 	width: 100%;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 }
+
 .icon-circle-graph {
 	height: 1.5vw;
 	width: 1.5vw;
 }
-.text-legend-circle{
+
+.text-legend-circle {
 	width: 100%;
 	padding-left: 0.5vw;
 	font-family: Gilroy;

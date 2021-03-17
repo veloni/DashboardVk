@@ -45,7 +45,7 @@ const BodyStatisticsElement = ({
             </div>
         </div>
         <div
-          className={`body-top-box-container-text ${isStatsShow ? 'is-hide' : 'is-show'}`}
+          className={`body-top-box-container-text ${isStatsShow ? "is-hide" : "is-show"}`}
         >
           <span className="secondary-text">
             {peopleCounter} people

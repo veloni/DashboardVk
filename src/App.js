@@ -9,11 +9,9 @@ const App = () => {
   const [isWhite,setIsWhite] = useState(false);
 
   return (
-    <section className= {`App ${isWhite ? 'white-theme' : 'black-theme'}`}>
+    <section className= {`App ${isWhite ? "white-theme": "black-theme"}`}>
       <Header/>
-      <Aside
-        switchTheme={setIsWhite}
-      />
+      <Aside switchTheme={setIsWhite}/>
       <Body/>
     </section>
   );

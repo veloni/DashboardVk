@@ -2,7 +2,7 @@ import './BodyGeoStatistic.scss';
 import '../../../../vars_and_mixins/colors.scss';
 
 const BodyGeoStatistic = () => {
-	const country = ["Russia", "China", "Ucraine", "USA", "Mongolia", "Other"];
+	const country = ['Russia', 'China', 'Ucraine', 'USA', 'Mongolia', 'Other'];
 	const valueCountry = [60, 15, 20, 0.26, 0.20, 0.50]
 
 	return (
