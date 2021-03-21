@@ -1,5 +1,6 @@
-import './BodyStatistic.scss';
 import BodyStatisticsElement from './BodyStatisticsElement';
+
+import './BodyStatistic.scss';
 
 const BodyStatistic = () => {
 	const initData = [

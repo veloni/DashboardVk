@@ -1,11 +1,12 @@
-import './BodyCandleGraph.scss';
-import '../../../../vars_and_mixins/colors.scss';
-import women from './svg/women.svg';
-import men from './svg/men.svg';
 import { VictoryChart, VictoryBar, VictoryGroup, VictoryAxis } from 'victory';
 
-const BodyCandleGraph = () => {
+import women from './svg/women.svg';
+import men from './svg/men.svg';
 
+import './BodyCandleGraph.scss';
+import '../../../../vars_and_mixins/colors.scss';
+
+const BodyCandleGraph = () => {
 	const dataMen = [
 		{ x: '<18', y: 7},
 		{ x: '18-21', y: 8 },
@@ -44,7 +45,7 @@ const BodyCandleGraph = () => {
 				axis: {
 					stroke: secondaryTextColor
 				},
-				tickLabels: {               
+				tickLabels: {
 					fill: secondaryTextColor,
 					fontSize: 22.5,
 				},
@@ -56,55 +57,55 @@ const BodyCandleGraph = () => {
 		<div className="candle-graph">
 			<div className="candle-graph-conteiner">
 				<div className="title-candle-graph">
-					<span className="main-text"> Gender / Age </span>
+					<span className="main-text">Gender / Age</span>
 					<div className="candle-box-legend">
-						<img 
-							src={women} 
-							className="icon-graph" 
-							alt=""
+						<img
+							src={women}
+							className="icon-graph"
+							alt="women"
 						/>
-						<span className="small-text"> women </span>
-						<img 
-							className="icon-graph" 
-							src={men} 
-							alt=""
+						<span className="small-text">women</span>
+						<img
+							className="icon-graph"
+							src={men}
+							alt="men"
 						/>
-						<span className="small-text"> men </span>
+						<span className="small-text">men</span>
 					</div>
 				</div>
 				<div className="candle-graph-box">
-						<VictoryChart 
-							height={ 300 }
-							domainPadding={{ x: 0 }} 
-							width={ 1250 } 
-							theme={ chartTheme } 
-							domain={{ x: [0, 9], y:[0 , 80] }}
+					<VictoryChart
+						height={300}
+						domainPadding={{ x: 0 }}
+						width={1250}
+						theme={chartTheme}
+						domain={{ x: [0, 9], y:[0 , 80] }}
+					>
+						<VictoryAxis
+							tickValues={[0, 9]}
+						/>
+						<VictoryAxis
+							dependentAxis
+							crossAxis
+							tickValues={[20, 40, 60, 80, 100]}
+							tickFormat={(t) => `${t}%`}
+						/>
+						<VictoryGroup
+							vertical
+							offset={50}
+							style={{ data: { width: 50 } }}
+							colorScale={["#E786D7", "#7F7FD5"]}
 						>
-							<VictoryAxis 
-								tickValues={[0, 9]}
+							<VictoryBar
+								cornerRadius={{ topLeft: 15, topRight: 15 }}
+								data={dataWomen}
 							/>
-							<VictoryAxis 
-								dependentAxis 
-								crossAxis
-								tickValues={[20, 40, 60, 80, 100]}
-								tickFormat={(t) => `${(t)}%`}
+							<VictoryBar
+								cornerRadius={{ topLeft: 15, topRight: 15 }}
+								data={dataMen}
 							/>
-							<VictoryGroup 
-								vertical                  
-								offset={50}
-								style={{ data: { width: 50 } }}
-								colorScale={["#E786D7", "#7F7FD5"]}
-							>
-								<VictoryBar
-									cornerRadius={{ topLeft: 15, topRight: 15 }}
-									data={dataWomen}	
-								/>
-								<VictoryBar
-									cornerRadius={{ topLeft: 15, topRight: 15 }}
-									data={dataMen}
-								/>
-							</VictoryGroup>
-						</VictoryChart>
+						</VictoryGroup>
+					</VictoryChart>
 				</div>
 			</div>
 		</div>
@@ -112,4 +113,3 @@ const BodyCandleGraph = () => {
 };
 
 export default BodyCandleGraph;
-

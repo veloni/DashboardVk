@@ -1,10 +1,12 @@
 @font-face {
 	font-family: 'Gilroy';
-	src: url("fonts/gilroy-medium.ttf");
+	src: url("fonts/gilroy-medium.ttf") format('ttf');
+	font-weight: normal;
+	font-style: normal;
 }
 
 .main-text {
-	color:$textColorBlackTheme;
+	color: $textColorBlackTheme;
 	font-family: Gilroy;
 	font-size: 1.5vw;
 	font-style: normal;
@@ -19,7 +21,7 @@
 }
 
 .secondary-text {
-	color:$textColorBlackTheme;
+	color: $textColorBlackTheme;
 	font-family: Gilroy;
 	font-size: 1.25vw;
 	font-style: normal;
@@ -30,7 +32,7 @@
 }
 
 .percentage-text {
-	color:$secondaryTextColor;
+	color: $secondaryTextColor;
 	font-family: Gilroy;
 	font-size: 1vw;
 	font-style: normal;
@@ -41,7 +43,7 @@
 }
 
 .small-text {
-	color:$textColorBlackTheme;
+	color: $textColorBlackTheme;
 	font-family: Gilroy;
 	font-size: 1vw;
 	font-style: normal;
@@ -52,7 +54,7 @@
 }
 
 .secondary-small-text {
-	color:$mainBorderColor;
+	color: $mainBorderColor;
 	font-family: Gilroy;
 	font-size: 1vw;
 	font-style: normal;

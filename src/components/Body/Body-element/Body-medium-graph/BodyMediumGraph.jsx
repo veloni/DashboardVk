@@ -1,8 +1,10 @@
-import './BodyMediumGraph.scss';
-import '../../../../vars_and_mixins/colors.scss';
+import { VictoryLine, VictoryChart, VictoryScatter, VictoryAxis } from 'victory';
+
 import iconFollower from './svg/icon-follower.svg';
 import iconTotal from './svg/icon-total.svg';
-import { VictoryLine, VictoryChart, VictoryScatter, VictoryAxis } from 'victory';
+
+import './BodyMediumGraph.scss';
+import '../../../../vars_and_mixins/colors.scss';
 
 const BodyMediumGraph = () => {
 
@@ -49,38 +51,39 @@ const BodyMediumGraph = () => {
 		<div className="lineal-graph">
 			<div className="lineal-graph-continer">
 				<div className="title-graph">
-					<span className="main-text"> Audiende reach </span>
+					<span className="main-text">Audiende reach</span>
 					<div className="box-date">
-						<span className="date"> 31/01/2020 – 06/02/2020 </span>
+						<span className="date">31/01/2020 – 06/02/2020</span>
 					</div>
 					<div className="box-legend">
-						<img 
-							className="icon-graphs" 
-							src={iconTotal} 
-							alt=""
+						<img
+							className="icon-graphs"
+							src={iconTotal}
+							alt="total"
 						/>
-						<span className="small-text"> Total </span>
-						<img 
-							className="icon-graphs" 
-							src={iconFollower} 
-							alt=""
+						<span className="small-text">Total</span>
+						<img
+							className="icon-graphs"
+							src={iconFollower}
+							alt="follower"
 						/>
-						<span className="small-text"> Follower </span>
+						<span className="small-text">Follower</span>
 					</div>
 				</div>
-
-				<VictoryChart 
-					height={300} 
+				<VictoryChart
+					height={300}
 					width={1450}
 					theme={chartTheme}
 				>
-					<VictoryAxis 
+					<VictoryAxis
 						tickValues={[0,1,2,3,4,5,6,7,8,9]}
 					/>
-					<VictoryAxis dependentAxis crossAxis
+					<VictoryAxis
+						dependentAxis
+						crossAxis
 						tickValues={[0,3,6,9]}
 					/>
-					<VictoryLine 
+					<VictoryLine
 						interpolation="natural"
 						style={{data:{stroke:"#7F7FD5", strokeWidth:4}}}
 						data={data}
@@ -92,7 +95,7 @@ const BodyMediumGraph = () => {
 					/>
 				</VictoryChart>
 			</div>
-		</div>	
+		</div>
 	);
 };
 
