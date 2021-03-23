@@ -20,7 +20,6 @@ const BodyStatisticsElement = ({ data }) => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      console.log(1);
       changeData();
     }, 2000);
 
