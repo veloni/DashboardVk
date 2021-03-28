@@ -47,6 +47,7 @@
     border-radius: 1vw 1vw 1vw 1vw;
     display: flex;
     align-items: center;
+    cursor: pointer;
   }
 
   .button-switch-black-theme-cirlce {
@@ -58,6 +59,7 @@
     border-radius: 1vw 1vw 1vw 1vw;
     margin-left:2vw;
     transition: 1s margin-left;
+    cursor: pointer;
   }
 
   .button-switch-white-theme {
@@ -68,6 +70,7 @@
     border-radius: 1vw 1vw 1vw 1vw;
     display: flex;
     align-items: center;
+    cursor: pointer;
   }
 
   .button-switch-white-theme-cirlce {
@@ -77,6 +80,7 @@
     border-radius: 1vw 1vw 1vw 1vw;
     margin-left:0.4vw;
     transition: 1s margin-left;
+    cursor: pointer;
   }
 
   .vk-icon {

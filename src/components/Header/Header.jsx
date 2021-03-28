@@ -10,7 +10,8 @@ const Header = () => {
       <span className="header-title-text"> 
         Statistics
       </span>
-      <input className="search" type="search"></input>
+      <div className="search" type="search">
+      </div>
       <img 
         src={notification} 
         className="notification" 
